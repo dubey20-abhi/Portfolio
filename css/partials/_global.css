@@ -1,0 +1,112 @@
+/*global classes*/
+.title-text {
+    font: normal bold 50px/72px var(--roboto);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*Buttons*/
+
+.button {
+    padding: 0.8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover {
+     background-color: whitesmoke;
+     background-clip: padding-box;
+     color: black;
+}
+
+.button.primary-button::after {
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+    margin-left: 50px;
+}
+
+.button.secondary-button:hover {
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.secondary-button::after {
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: var(--roboto);
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: var(--gradient-color);
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--text-color);
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+button:focus,
+button:active,
+button:hover
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}

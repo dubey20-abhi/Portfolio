@@ -1,0 +1,378 @@
+
+/*import fonts from fonts.css file*/
+@import url(./fonts.css);
+
+/*CSS variables*/
+@import url(./partials/_variables.css);
+
+/*Import global styling*/
+@import url(./partials/_global.css);
+
+/*Start navigation*/
+
+.header_area .main_menu .navbar .navbar-brand {
+    padding: 0 2rem 0 0rem;
+    font-family: var(--roboto);
+    font-size: 35px;
+    font-weight: 600;
+}
+.header_area .main_menu .navbar {
+    padding: 1rem 5rem;
+}
+
+.header_area .main_menu .nav-item .nav-link {
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7em;
+    color: var(--title-color);
+    font: normal 500 15px/2px var(--roboto);
+}
+
+.header_area .main_menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.header_area .main_menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+/*End navigation*/ 
+
+/*Start Banner Area*/
+/*.site-main .site-banner {
+    background: url(../img/main-background-3.jpg) no-repeat 0% 50%;
+}*/
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 4.77rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.title-text {
+    font: normal bold 50px/72px var(--roboto);
+}
+/*End Banner Area*/
+
+/*Start About Area*/
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 40px/55px var(--roboto);
+    letter-spacing: 18px;
+}
+
+.site-main .about-area .about-title .paragraph> p{
+    padding: 0rem 0rem;
+}
+
+.site-main .about-area .about-image .img-fluid {
+    padding-top: 60px ;
+    height: 31.5rem;
+}
+
+/*End about Area*/
+
+/*Start Skills Area*/
+.site-main .skill-area {
+    padding: 8rem 5rem;
+}
+.skill-area .skill-content{
+    font-family: var(--roboto);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-area .title::after {
+    content: " what i know ";
+}
+
+.skill-area .skill-content .column {
+     width: calc(50% - 30px);
+}
+
+.skill-area .skill-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-area .skill-content .left p {
+    text-align: justify;
+}
+
+.skill-area .skill-content .left a {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+}
+
+.skill-area .skill-content .left a:hover {
+    color: black;
+    background: whitesmoke;
+
+}
+
+.skill-area .skill-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skill-area .skill-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-area .skill-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skill-area .skill-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: var(--gradient-color);
+    position: relative;
+}
+
+.skill-area .skill-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson ;
+}
+
+.skill-area .skill-content .right .html::before {
+    width: 70%;
+}
+.skill-area .skill-content .right .css::before {
+    width: 40%;
+}
+.skill-area .skill-content .right .js::before {
+    width: 70%;
+}
+.skill-area .skill-content .right .mysql::before {
+    width: 60%;
+}
+.skill-area .skill-content .right .java::before {
+    width: 70%;
+}
+
+/*End Skills Area*/
+
+/*Start Contact Area*/
+
+.site-main .contact-area {
+    padding: 8rem 5rem;
+}
+.site-main .contact-area .title::after {
+    content: " get in touch ";
+}
+
+.site-main .contact-area .contact-content {
+    font-family: var(--roboto);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-main .contact-area .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.site-main .contact-area .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.site-main .contact-area .contact-content .left p {
+    text-align: justify;
+}
+
+.site-main .contact-area .contact-content .left .icon {
+    margin: 10px 0;
+}
+
+.site-main .contact-area .contact-content .roow {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.site-main .contact-area .contact-content .roow .info {
+    margin-left: 30px;
+}
+
+.site-main .contact-area .contact-content .roow i {
+    font-size: 25px;
+    color: #854fee;
+}
+
+.site-main .contact-area .contact-content .info .head {
+    font-weight: 500;
+} 
+
+.site-main .contact-area .contact-content .info .sub-title {
+    color: #141313;
+}
+
+.site-main .contact-area .contact-content .right form .fields {
+    display: flex;
+}
+
+.site-main .contact-area .contact-content .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.site-main .contact-area .contact-content .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.site-main .contact-area .contact-content .right form .name {
+    margin-right: 10px;
+}
+
+.site-main .contact-area .contact-content .right form .email {
+    margin-left: 10px;
+}
+/*.site-main .contact-area .contact-content .right form .subj {
+    margin-top: 30px;
+}*/
+
+.site-main .contact-area .contact-content .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0px 15px;
+    font-size: 17px;
+    font-family: var(--roboto);
+}
+
+.site-main .contact-area .contact-content .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0px 15px;
+    padding-top: 10px;
+    font-size: 17px;
+    font-family: var(--roboto);
+    margin-top: 15px;
+    resize: none;
+}
+
+.site-main .contact-area .contact-content .right form .button {
+    height: 60px;
+    width: 180px;
+    padding-left: 0px;
+    margin-top: 14px;
+}
+
+.site-main .contact-area .contact-content .right form .button button {
+    width: 95%;
+    height: 100%;
+    border: 2px solid #201f1f17;
+    background-color: #854fee;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/*.site-main .contact-area .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+}*/
+
+.site-main .contact-area .contact-content .right form .button button:hover {
+    color: black;
+    background-color: whitesmoke;
+    
+}
+
+/*End Contact Area*/
+
+/*Start Project Area*/
+
+.site-main .project-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .project-area .project-content{
+    font-family: var(--roboto);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-main .project-area .project-content .column {
+    width: calc(50% - 30px);
+}
+
+.site-main .project-area .project-content .row1 {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+
+
+
+/*End Project Area*/
